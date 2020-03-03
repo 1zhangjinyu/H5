@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 480px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-weight:bolder;font-size:35px;">学生信息</p>
+    <fieldset style="width: 500px;">
+        <legend style="color:red;">学生档案</legend>
+        <form action="#" method="GET">
+            <p>姓名：</p>
+            <input type="text" name="nam" required placeholder="请输入姓名" autofocus>&nbsp;<span style="color: red;">*</span><br>
+            <p>学号：</p>         
+            <input type="text" name="no" required placeholder="请输入学号">&nbsp;<span style="color: red;">*</span><br>
+            <p>手机号码：</p>        
+            <input type="tel" name="tel" required placeholder="请输入手机号">&nbsp;<span style="color: red;">*</span><br>
+            <p>邮箱地址：</p>
+            <input type="email" name="ema" required placeholder="请输入邮箱地址">&nbsp;<span style="color: red;">*</span><br>
+            <p>录取学校：</p>
+            <input type="search" name="school" list="schools">
+            <datalist id="schools">
+                <option value="河北师范大学"></option>
+                <option value="清华大学"></option>
+                <option value="北京大学"></option>
+            </datalist><br>
+            <p>入学成绩：</p>
+            <input type="number" name="score" min="0" max="750"><br>
+            <p>入学时间：</p>
+            <input type="date" name="datedemo"><br><br>
+            <input style="background-color: silver;" type="submit" name="sub" value="提交">
+        </form>
+    </fieldset>
+</body>
+</html>
